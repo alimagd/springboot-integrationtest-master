@@ -16,12 +16,12 @@ public class StudentService {
     private StudentRepository repository;
 
     public List<Student> createStudent() {
-        List<Student> students = new ArrayList<Student>();
-        List<Student> savedStudents = new ArrayList<Student>();
+        List<Student> students = new ArrayList<>();
+        List<Student> savedStudents = new ArrayList<>();
         
         students.add(new Student("Ali Joon", "Desc for st111"));
         students.add(new Student("Fatti Magd", "Desc 4 st656"));
-        students.add(new Student("Hamid Bro", "Dsc 4 st0989"));
+        students.add(new Student("Hamid Bro", "Dsc 4 ST0989"));
         Iterable<Student> itrStudents=repository.saveAll(students);
         itrStudents.forEach(savedStudents::add);
 
